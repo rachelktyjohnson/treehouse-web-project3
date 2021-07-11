@@ -7,6 +7,7 @@
 
 header{
     text-align:center;
+    background:#eee;
 }
 
 header h1{
@@ -44,6 +45,7 @@ form fieldset{
     border:none;
 }
 
+
 form legend{
     border-top:4px solid #004747;
     font-size:1.4rem;
@@ -74,13 +76,14 @@ form input.form-fillable, form select{
     font-size:1.2rem;
 }
 
-form input:focus{
+form input, textarea{
+    transition: background 0.5s;
+}
+
+form input:focus, textarea:focus{
     background:#ddd;
 }
 
-textarea:focus{
-    background:#ddd;
-}
 
 form input::placeholder{
     text-align:right;
