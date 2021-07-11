@@ -6,38 +6,40 @@
     <title>The Code Review</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <header>
     <h1>The Code Review</h1>
-    <h2>Sign up for our newsletter</h2>
-    <p>Get the latest news on how your code is doing right in your inbox</p>
+    <div>
+        <h2>Sign up for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
 </header>
 <main>
     <form>
         <fieldset>
             <legend>Contact Information</legend>
             <div class="form-field">
-                <label for="email">Full Name</label>
-                <input type="text" id="full_name" name="email" required>
+                <label class="form-fillable" for="email">Full Name</label>
+                <input class="form-fillable" type="text" id="full_name" name="email" placeholder="required" required>
             </div>
             <div class="form-field">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <label class="form-fillable" for="email">Email Address</label>
+                <input class="form-fillable" type="email" id="email" name="email" placeholder="required" required>
             </div>
             <div class="form-field">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+                <label class="form-fillable" for="phone">Phone Number</label>
+                <input class="form-fillable" type="tel" id="phone" name="phone" required>
             </div>
             <div class="form-field">
-                <label for="street">Street Address</label>
-                <input type="text" id="street" name="street" required>
+                <label class="form-fillable" for="street">Street Address</label>
+                <input class="form-fillable" type="text" id="street" name="street" required>
             </div>
             <div class="form-field">
-                <label for="city">City</label>
-                <input type="text" id="city" name="city" required>
+                <label class="form-fillable" for="city">City</label>
+                <input class="form-fillable" type="text" id="city" name="city" required>
             </div>
             <div class="form-field">
                 <label for="state">State</label>
@@ -53,33 +55,44 @@
                 </select>
             </div>
             <div class="form-field">
-                <label for="postcode">Postcode</label>
-                <input type="number" id="postcode" name="postcode" required>
+                <label class="form-fillable" for="postcode">Postcode</label>
+                <input class="form-fillable" type="number" id="postcode" name="postcode" required>
             </div>
         </fieldset>
         <fieldset>
             <legend>Newsletter</legend>
-            <div class="form-field">
+            <div class="form-field-select">
                 <p>Select the newsletters you would like to receive</p>
+                <div class="form-field">
                 <input type="checkbox" id="news_html" name="news" value="news_html">
-                <label for="news_html"> HTML News</label><br>
+                    <label for="news_html"> HTML News</label><br>
+                </div>
+                <div class="form-field">
                 <input type="checkbox" id="news_css" name="news" value="news_css">
-                <label for="news_css"> CSS News</label><br>
+                    <label for="news_css"> CSS News</label><br>
+                </div>
+                <div class="form-field">
                 <input type="checkbox" id="news_javascript" name="news" value="news_javascript">
-                <label for="news_javascript"> Javascript News</label><br>
+                    <label for="news_javascript"> Javascript News</label><br>
+                </div>
             </div>
-            <div class="form-field">
+            <div class="form-field-radio">
                 <p>Newsletter Format</p>
-                <input type="radio" id="format_html" name="format" value="format_html">
-                <label for="format_html">HTML</label><br>
-                <input type="radio" id="format_plain" name="format" value="format_plain">
-                <label for="format_plain">Plain Text</label><br>
+                <div class="form-field">
+                    <input type="radio" id="format_html" name="format" value="format_html">
+                    <label for="format_html">HTML</label><br>
+                </div>
+                <div class="form-field">
+                    <input type="radio" id="format_plain" name="format" value="format_plain">
+                    <label for="format_plain">Plain Text</label><br>
+                </div>
             </div>
             <div class="form-field">
                 <label for="other">Other topics you'd like to hear about</label>
                 <textarea id="other" name="other"></textarea>
             </div>
         </fieldset>
+        <input class="btn-submit" type="submit" value="Sign Up"/>
     </form>
 </main>
 <footer>

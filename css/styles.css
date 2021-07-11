@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+header{
+    text-align:center;
+}
+
+header h1{
+    background: #004747;
+    color:white;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:1.5rem;
+    padding:25px;
+}
+
+header div{
+    padding:25px;
+    width:95%;
+    margin: 0 auto;
+}
+
+header div h2{
+    margin:15px 0;
+    font-weight:900;
+}
+
+header div p{
+    color: #bababa;
+    font-size:1.1rem;
+    font-weight:300;
+}
+
+form{
+    padding:25px 15px;
+}
+
+
+form fieldset{
+    border:none;
+}
+
+form legend{
+    border-top:4px solid #004747;
+    font-size:1.4rem;
+    font-weight:700;
+    color: #004747;
+    width:100%;
+    padding:30px 0;
+}
+
+form label.form-fillable, form input.form-fillable{
+    display:block;
+}
+
+form .form-field{
+    margin:25px 0;
+}
+
+form label{
+    margin-bottom:10px;
+}
+
+form input.form-fillable, form select{
+    width:100%;
+    padding:15px;
+    border-radius:5px;
+    border: 0;
+    background: #f5f5f5;
+    font-size:1.2rem;
+}
+
+.form-field-select{
+    margin:15px 0 30px;
+}
+
+.form-field-select .form-field{
+    margin:10px 0;
+}
+
+.form-field-radio .form-field{
+    margin: 10px 0;
+}
+
+textarea{
+    margin-top:10px;
+    width:100%;
+    padding:15px;
+    border-radius:5px;
+    border: 0;
+    background: #f5f5f5;
+    font-size:1.2rem;
+}
+
+form .btn-submit{
+    font-size:1.3rem;
+    background:teal;
+    padding:25px 0;
+    width:100%;
+    border: 0;
+    border-radius:5px;
+    color:white;
+    font-weight:700;
+}
+
+footer{
+    text-align:center;
+    font-style:italic;
+    color: #cbcbcb;
+    margin-bottom:100px;
+}
