@@ -70,8 +70,24 @@ form input.form-fillable, form select{
     padding:15px;
     border-radius:5px;
     border: 0;
-    background: #f5f5f5;
+    background: #efefef;
     font-size:1.2rem;
+}
+
+form input:focus{
+    background:#ddd;
+}
+
+textarea:focus{
+    background:#ddd;
+}
+
+form input::placeholder{
+    text-align:right;
+    font-style:italic;
+    color: #959595;
+    font-size:0.9rem;
+    padding-right:10px;
 }
 
 .form-field-select{
@@ -92,7 +108,7 @@ textarea{
     padding:15px;
     border-radius:5px;
     border: 0;
-    background: #f5f5f5;
+    background: #efefef;
     font-size:1.2rem;
 }
 
@@ -112,4 +128,30 @@ footer{
     font-style:italic;
     color: #cbcbcb;
     margin-bottom:100px;
+}
+
+@media (min-width:768px){
+    main{
+        max-width:800px;
+        margin: 0 auto;
+    }
+    .form-field label.form-fillable, .form-field input.form-fillable{
+        display:inline-block;
+    }
+    .form-field label.form-fillable{
+        width:20%;
+    }
+    .form-field input.form-fillable{
+        width:79%;
+    }
+    .form-field select{
+        width:79%;
+    }
+
+    .form-field .form-fillable.postcode{
+        width:20%;
+    }
+    textarea{
+        height:150px;
+    }
 }

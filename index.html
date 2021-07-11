@@ -23,15 +23,15 @@
             <legend>Contact Information</legend>
             <div class="form-field">
                 <label class="form-fillable" for="email">Full Name</label>
-                <input class="form-fillable" type="text" id="full_name" name="email" placeholder="required" required>
+                <input class="form-fillable" type="text" id="full_name" name="email" placeholder="Required" required>
             </div>
             <div class="form-field">
                 <label class="form-fillable" for="email">Email Address</label>
-                <input class="form-fillable" type="email" id="email" name="email" placeholder="required" required>
+                <input class="form-fillable" type="email" id="email" name="email" placeholder="Required" required>
             </div>
             <div class="form-field">
                 <label class="form-fillable" for="phone">Phone Number</label>
-                <input class="form-fillable" type="tel" id="phone" name="phone" required>
+                <input class="form-fillable" type="tel" id="phone" name="phone" placeholder="04xx xxx xxx"required>
             </div>
             <div class="form-field">
                 <label class="form-fillable" for="street">Street Address</label>
@@ -42,8 +42,9 @@
                 <input class="form-fillable" type="text" id="city" name="city" required>
             </div>
             <div class="form-field">
-                <label for="state">State</label>
+                <label class="form-fillable" for="state">State</label>
                 <select id="state" name="state">
+                    <option disabled selected>Choose State</option>
                     <option value="act">ACT</option>
                     <option value="nsw">NSW</option>
                     <option value="nt">NT</option>
@@ -56,7 +57,7 @@
             </div>
             <div class="form-field">
                 <label class="form-fillable" for="postcode">Postcode</label>
-                <input class="form-fillable" type="number" id="postcode" name="postcode" required>
+                <input class="form-fillable postcode" type="number" id="postcode" name="postcode" placeholder="xxxx"required>
             </div>
         </fieldset>
         <fieldset>
