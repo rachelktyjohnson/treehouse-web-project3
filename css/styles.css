@@ -76,11 +76,11 @@ form input.form-fillable, form select{
     font-size:1.2rem;
 }
 
-form input, textarea{
+form input, textarea, select{
     transition: background 0.5s;
 }
 
-form input:focus, textarea:focus{
+form input:focus, textarea:focus, select:focus{
     background:#ddd;
 }
 
